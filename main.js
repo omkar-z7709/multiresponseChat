@@ -118,7 +118,7 @@ async function finalOut() {
         model:'claude-opus-4-8',
         messages:[
 
-            {role:"user", content:MESSAGE_DB},
+            {role:"user", content:JSON.stringify(MESSAGE_DB)},
             {role:"system", content:FinalSystemPrompt}
         ]
         
